@@ -22,8 +22,7 @@
 					"exceptionVariableField": "",
 					"callType": "Create an instance",
 					"arguments": [
-						"policies",
-						"conf.ad_domains"
+						"policies"
 					],
 					"nodeIcon": "material-symbols:code",
 					"nodeColor": "",
@@ -2078,8 +2077,8 @@
 		}
 	],
 	"viewport": {
-		"x": 257,
-		"y": 340,
-		"zoom": 1
+		"x": -264.2818576185032,
+		"y": 351.9354668791915,
+		"zoom": 1.2209465126691341
 	}
 }

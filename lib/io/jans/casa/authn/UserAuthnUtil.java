@@ -41,13 +41,15 @@ public class UserAuthnUtil {
     // Clave: sufijo de dominio (ej: "@externos.isciii.es")
     // Valor: Map con server_url, base_dn, service_dn, service_password, user_attr,
     //        search_filter (opcional), connect_timeout (opcional)
-    private Map<String, Object> adDomains = Collections.emptyMap();
+    private static Map<String, Object> adDomains = Collections.emptyMap();
 
     public UserAuthnUtil() { }
 
     public UserAuthnUtil(List<String> policies) {
         this.policies = policies;
-        this.adDomains = loadAdDomains();
+        if (adDomains.isEmpty()) {
+         adDomains = loadAdDomains();
+        }
     }
 
     private static Map<String, Object> loadAdDomains() {
