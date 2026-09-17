@@ -6,7 +6,7 @@ policies = inutil.policies
 methods = inutil.methods
 obj = { captureLocation: inutil.needsCaptureLocation }
 inutil = null
-reinutil = Call io.jans.casa.authn.UserAuthnUtil#new policies conf.ad_domains
+reinutil = Call io.jans.casa.authn.UserAuthnUtil#new policies
 Repeat 3 times max
      userData = RRF "main.ftlh" obj
      Call reinutil validate userData.username userData.password
